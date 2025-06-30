@@ -41,10 +41,11 @@ You can also add title to your images. use `data-title=""` attribute for writing
 ```
 ## 🪴 Upcommings...
 
-- Download button
-- Image scroll on Left-Right keys
-- Image scroll using drag on small devices
-- Extra button to open Preview
+- Enable escape button   ---------------------------- DONE
+- Image scroll on Left-Right keys ------------------- DONE
+- Extra button to open Preview ---------------------- 
+- Download button ----------------------------------- 
+- Image scroll using drag on small devices ----------
 
 ## 🍕 Conclution
 This project is currently under development. We will add more customizations in the near future. 

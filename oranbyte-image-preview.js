@@ -66,6 +66,8 @@ class ImageViewer {
     init() {
         this.enablePreview();
         this.setActionListerToAllImages();
+        this.enableLeftRightKeys();
+        this.enableEscapeKey();
     }
 
     enablePreview() {
@@ -220,5 +222,25 @@ class ImageViewer {
         previewModal.appendChild(actionButtons);
 
         document.body.appendChild(previewModal);
+    }
+
+    enableLeftRightKeys(){
+      document.addEventListener('keydown', (event) => {
+        if (!this.isModalOpen) return;
+
+        if (event.key === 'ArrowLeft') {
+          this.leftBtn.click();
+        } else if (event.key === 'ArrowRight') {
+          this.rightBtn.click();
+        }
+      });
+    }
+
+    enableEscapeKey(){
+      document.addEventListener('keydown', (event)=>{
+        if(event.key === 'Escape' && this.isModalOpen){
+          this.closeBtn.click();
+        }
+      });
     }
 }
