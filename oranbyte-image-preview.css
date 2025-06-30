@@ -33,7 +33,7 @@
     background-color: transparent;
 }
 
-.oranbyte-img-preview.preview-modal .hide{
+.oranbyte-img-preview.preview-modal .hide {
     display: none !important;
 }
 
@@ -53,7 +53,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .oranbyte-img-preview .image-box img {
@@ -123,6 +123,20 @@
     font-size: 1.5rem;
 }
 
+.oranbyte-img-preview .action-buttons .download-btn {
+    top: 20px;
+    right: 68px;
+    font-size: 1.1rem;
+}
+
+.oranbyte-img-preview .action-buttons .download-btn {
+    display: none;
+}
+.oranbyte-img-preview.downloadable .action-buttons .download-btn {
+    display: flex;
+}
+
+
 @media (max-width: 600px) {
     .oranbyte-img-preview .image-with-title {
         max-width: 95%;
@@ -170,6 +184,7 @@
         transform: scale(0.8);
         opacity: 0;
     }
+
     100% {
         transform: scale(1);
         opacity: 1;
@@ -181,6 +196,7 @@
         transform: scale(1);
         opacity: 1;
     }
+
     100% {
         transform: scale(0.8);
         opacity: 0;
