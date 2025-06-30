@@ -39,6 +39,12 @@ You can also add title to your images. use `data-title=""` attribute for writing
     <img src="..." data-title="My title here" alt="Image">
 </div>
 ```
+## 🪴 Upcommings...
+
+- Download button
+- Image scroll on Left-Right keys
+- Image scroll using drag on small devices
+- Extra button to open Preview
 
 ## 🍕 Conclution
 This project is currently under development. We will add more customizations in the near future. 
