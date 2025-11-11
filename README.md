@@ -1,102 +1,147 @@
-# 🌻 Image Viewer
+# 🌻 Image & Video Viewer  
 
-Image viewer an image-preview library. EASY TO USE
+A lightweight, flexible media preview library — supports **images and videos**.  
+  **Easy to use**, minimal setup, and mobile friendly.
+
+---
 
 ## 🪶 Screenshots
-<div style="display: flex;flex-direction: column; grid-gap: 10px;">
-     <div style="display: flex; grid-gap: 10px;">
-        <img src="screenshots/1.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="screenshots/2.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-    </div>
+<div style="display: flex;flex-direction: column; gap: 10px;">
+  <div style="display: flex; gap: 10px;">
+    <img src="screenshots/1.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+    <img src="screenshots/2.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+  </div>
 </div>
-<div style="display: flex;flex-direction: column; grid-gap: 10px;">
-     <div style="display: flex; grid-gap: 10px;">
-        <img src="screenshots/3.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="screenshots/4.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-    </div>
+<div style="display: flex;flex-direction: column; gap: 10px;">
+  <div style="display: flex; gap: 10px;">
+    <img src="screenshots/3.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+    <img src="screenshots/4.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+  </div>
 </div>
 
-## 🐊 Usage
-Just add the style and script to your page and your are ready to start!
+---
 
-### Basic 
-Add data attribute `data-image-preview="true"` to make your container support to preview image
+## 🐊 Usage  
+
+Just include the stylesheet and script, and you’re ready to start!
+
+---
+
+###  Basic Image Preview  
+
+Add the `data-media-preview="true"` attribute to any container to enable preview support.  
+
 ```html
-<div data-image-preview="true">
-    <img src="..." alt="Image">
-    <img src="..." alt="Image">
-    <img src="..." alt="Image">
-    <img src="..." alt="Image">
-    <img src="..." alt="Image">
+<div data-media-preview="true">
+  <img src="..." alt="Image">
+  <img src="..." alt="Image">
+  <img src="..." alt="Image">
 </div>
 ```
 
-### With title
-You can also add title to your images. use `data-title=""` attribute for writing image title
+---
+
+###  Video Preview Support  
+
+You can now preview **videos** by using `data-video-url` on a container element such as a <div>.
 
 ```html
-<div data-image-preview="true">
-    <img src="..." data-title="My title here" alt="Image">
+<div data-media-preview="true">
+  <img src="..." alt="Image">
+  <div data-video-url="path/to/video.mp4" data-title="Sample Video"></div>
+  <img src="..." alt="Image">
 </div>
 ```
 
-### Open Image Preview with External Buttons
-You can open the image preview using external buttons by linking them with the image using either `data-click-source` (for a single button) or `data-click-sources` (for multiple buttons).
+>  The viewer automatically handles both images (`<img>`) and elements with `data-media-url` or `data-video-url`.
 
-- Single Click Source (data-click-source)
-Use an element ID selector to specify which button should open the image preview:
+---
+
+###  With Title  
+
+Add `data-title=""` to include a caption or title.
 
 ```html
-<div data-image-preview="true">
-    <img src="..." data-click-source="#myButtonSource" alt="Image">
+<div data-media-preview="true">
+  <img src="..." data-title="My title here" alt="Image">
 </div>
+```
+
+---
+
+###  Open Preview with External Buttons  
+
+You can open previews using external buttons linked via attributes.
+
+#### 🔹 Single Click Source (`data-click-source`)
+```html
+<div data-media-preview="true">
+  <img src="..." data-click-source="#myButtonSource" alt="Image">
+</div>
+
 <button id="myButtonSource">Open Image</button>
 ```
 
-- Multiple Click Sources (data-click-sources)
-Use a class selector to attach multiple buttons as triggers for the same image:
+#### 🔹 Multiple Click Sources (`data-click-sources`)
 ```html
-<div data-image-preview="true">
-    <img src="..." data-click-sources=".myButtonSource" alt="Image">
+<div data-media-preview="true">
+  <img src="..." data-click-sources=".myButtonSource" alt="Image">
 </div>
 
 <button class="myButtonSource">Source 1</button>
 <button class="myButtonSource">Source 2</button>
 <button class="myButtonSource">Source 3</button>
 ```
- Both data-click-source and data-click-sources accept any valid CSS selector.
+Both attributes accept **any valid CSS selector**.
 
-### Enable download button
-You can enable the download functionality for specific images or all images by using the `data-image-downloadable` attribute.
+---
 
-- **Enable Download for Specific Images** - Only images explicitly marked with the `data-image-downloadable="true"` attribute will be downloadable.
+###  Enable Download Button  
+
+You can allow downloading of specific or all images easily.
+
+#### For Specific Images
 ```html
-<div data-image-preview="true">
-    <img src="..." alt="Image">
-    <img src="..." alt="Image" data-image-downloadable="true">
-    <img src="..." alt="Image">
+<div data-media-preview="true">
+  <img src="..." alt="Image">
+  <img src="..." alt="Image" data-media-downloadable="true">
 </div>
 ```
 
-- **Enable Download for All Images** - Set the `data-image-downloadable="true"` attribute on the parent container to make all child images downloadable.
+#### For All Images
 ```html
-<div data-image-preview="true"  data-image-downloadable="true">
-    <img src="..." alt="Image">
-    <img src="..." alt="Image">
-    <img src="..." alt="Image">
+<div data-media-preview="true" data-media-downloadable="true">
+  <img src="..." alt="Image">
+  <img src="..." alt="Image">
 </div>
 ```
 
-## 🪴 Upcommings...
+---
 
-- Enable escape button   ---------------------------- DONE
-- Image scroll on Left-Right keys ------------------- DONE
-- Extra button to open Preview ---------------------- DONE
-- Download button ----------------------------------- DONE
-- Image scroll using drag on small devices ----------
+### 🎹 Keyboard Controls  
 
-## 🍕 Conclution
-This project is currently under development. We will add more customizations in the near future. 
-<br><br>
-<div align="center">🍊 COMMENT FOR FAST UPDATE</div>
-<br><br>
+Once a preview is open:
+
+- **← / →** → Navigate previous/next media  
+- **Spacebar** → Play/Pause video (if video is active)  
+- **ESC** → Close preview  
+- Videos automatically **pause when the modal closes**
+
+---
+
+## 🪴 Upcoming Features  
+
+-  Image scrolling via drag on mobile (in progress)  
+-  Zoom & pinch gesture support  
+-  Lazy loading for large galleries  
+-  Dark/light theme toggle  
+
+---
+
+## Conclusion  
+
+This project is under active development — more features and customizations coming soon!  
+
+<br>
+<div align="center">🍊 **COMMENT FOR FAST UPDATES** 🍊</div>
+<br>

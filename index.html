@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Image-Viewer</title>
+  <title>Media-Viewer</title>
 
-  <link rel="stylesheet" href="oranbyte-image-preview.css" />
+  <link rel="stylesheet" href="oranbyte-media-preview.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
 
@@ -18,14 +18,14 @@
       padding: 20px;
     }
 
-    .image-container {
+    .media-container {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       gap: 10px;
     }
 
-    .image-container img {
+    .media-container img {
       width: 150px;
       height: 150px;
       object-fit: cover;
@@ -59,42 +59,41 @@
 
 <body>
   <div class="container">
-    <h1 class="fw-bold" style="font-family: cursive;">Image Viewer</h1>
+    <h1 class="fw-bold" style="font-family: cursive;">Media Viewer</h1>
     <br />
 
-    <div class="image-container" data-image-preview="true">
+    <div class="media-container" data-media-preview="true">
       <img
         src="https://media.istockphoto.com/id/1381637603/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=w64j3fW8C96CfYo3kbi386rs_sHH_6BGe8lAAAFS-y4="
-        alt="Image" data-click-sources=".click_me" />
-      <img
-        src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"
-        data-title="Lorem something here" alt="Image" data-image-downloadable="true" />
-      <img src="https://github.com/ProjectsAndPrograms/AnalyserOrange/raw/main/screenshots/3.png" alt="Image" />
+        alt="Media" data-click-sources=".click_me" data-media-downloadable="true" />
+
+      <img src="https://placehold.co/400" data-title="Lorem something here"
+        data-video-url="http://127.0.0.1:5500/movie.mp4" alt="Media" data-media-downloadable="true" />
+      <img src="https://github.com/ProjectsAndPrograms/AnalyserOrange/raw/main/screenshots/3.png" alt="Media" />
       <img
         src="https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk="
-        alt="Image" />
+        alt="Media" />
       <img
         src="https://static.vecteezy.com/system/resources/thumbnails/024/692/112/large/ai-generated-ai-generative-beautiful-rhododendron-flowers-over-sunset-mountains-field-landscape-graphic-art-photo.jpg"
-        alt="Image" />
+        alt="Media" />
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi2XlCV4fM9OU8JU44VKb7ZMgxGlg755-ucN-7MIM_AnFuZS_Ed6lDmp1aEhKKx7rC30o&usqp=CAU"
-        alt="Image" />
-      <img src="https://thumbs.dreamstime.com/b/summer-landscape-mountains-19962626.jpg" alt="Image" />
-      <img src="screenshots/2.png" alt="Image" />
+        src="https://encrypted-tbn0.gstatic.com/medias?q=tbn:ANd9GcSi2XlCV4fM9OU8JU44VKb7ZMgxGlg755-ucN-7MIM_AnFuZS_Ed6lDmp1aEhKKx7rC30o&usqp=CAU"
+        alt="Media" />
+      <img src="https://thumbs.dreamstime.com/b/summer-landscape-mountains-19962626.jpg" alt="Media" />
+      <img src="screenshots/2.png" alt="Media" />
       <img
         src="https://thumbs.dreamstime.com/b/utumn-landscape-colorful-autumn-nature-picturesque-hills-valleys-morning-autumn-landscape-colorful-autumn-nature-124953858.jpg"
-        alt="Image" />
-      <img
-        src="https://placehold.co/500x800"
+        alt="Media" />
+      <img src="https://placehold.co/500x800"
         data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa vitae magni quia esse quaerat dicta. Sequi fugiat inventore iusto earum explicabo? Sit illo dolor voluptate praesentium nulla. Eius, minus."
-        alt="Image" />
+        alt="Media" />
       <img
         src="https://thumbs.dreamstime.com/z/sunny-mountain-landscape-beautiful-green-hills-twilight-dramatic-red-sky-carpathian-ukraine-europe-beauty-world-89560646.jpg"
-        alt="Image" />
-      <img src="https://placehold.co/400" alt="Image" />
-      <img src="https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg" alt="Image" />
-      <img src="https://cdn.pixabay.com/photo/2015/08/23/09/22/banner-902589_640.jpg" alt="Image" />
-      <img src="https://i.pinimg.com/236x/51/e9/53/51e9533bb17c71eed34b531906b9c3ec.jpg" alt="Image" />
+        alt="Media" />
+      <img src="https://placehold.co/400" alt="Media" />
+      <img src="https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg" alt="Media" />
+      <img src="https://cdn.pixabay.com/photo/2015/08/23/09/22/banner-902589_640.jpg" alt="Media" />
+      <img src="https://i.pinimg.com/236x/51/e9/53/51e9533bb17c71eed34b531906b9c3ec.jpg" alt="Media" />
     </div>
 
     <br />
@@ -114,51 +113,52 @@
     <h5 class="fw-bold text-dark">Usage</h5>
     <p>Just add the style and script to your page and you are ready to start!</p>
 
-    <pre><link rel="stylesheet" href="oranbyte-image-preview.css"></pre>
-    <pre><script src="oranbyte-image-preview.js"></script></pre>
+    <pre><link rel="stylesheet" href=".../oranbyte-media-preview.css"></pre>
+    <pre><script src=".../oranbyte-media-preview.js"></script></pre>
 
     <p>
-      Add data attribute <span class="badge text-secondary fs-6">data-image-preview="true"</span> to make your container support image preview.
+      Add data attribute <span class="badge text-secondary fs-6">data-media-preview="true"</span> to make your container
+      support media preview.
     </p>
     <pre>
-<div data-image-preview="true">
-  <img src="..." alt="Image">
-  <img src="..." alt="Image">
-  <img src="..." alt="Image">
-  <img src="..." alt="Image">
-  <img src="..." alt="Image">
+<div data-media-preview="true">
+  <img src="..." alt="Media">
+  <img src="..." alt="Media">
+  <img src="..." alt="Media">
+  <img src="..." alt="Media">
+  <img src="..." alt="Media">
 </div>
 </pre>
 
-    <p>You can also add title to your images</p>
+    <p>You can also add title to your medias</p>
     <pre>
-<div data-image-preview="true">
-  <img src="..." data-title="My title here" alt="Image">
+<div data-media-preview="true">
+  <img src="..." data-title="My title here" alt="Media">
 </div>
 </pre>
 
     <hr />
     <br />
 
-    <h4>Open Image Preview with External Buttons</h4>
+    <h4>Open Media Preview with External Buttons</h4>
     <p>
-      You can open the image preview using external buttons by linking them with the image using either
+      You can open the media preview using external buttons by linking them with the media using either
       <code>data-click-source</code> (for a single button) or
       <code>data-click-sources</code> (for multiple buttons).
     </p>
 
     <p><strong>Single Click Source (<code>data-click-source</code>)</strong></p>
     <pre>
-<div data-image-preview="true">
-  <img src="..." data-click-source="#myButtonSource" alt="Image">
+<div data-media-preview="true">
+  <img src="..." data-click-source="#myButtonSource" alt="Media">
 </div>
-<button id="myButtonSource">Open Image</button>
+<button id="myButtonSource">Open Media</button>
 </pre>
 
     <p><strong>Multiple Click Sources (<code>data-click-sources</code>)</strong></p>
     <pre>
-<div data-image-preview="true">
-  <img src="..." data-click-sources=".myButtonSource" alt="Image">
+<div data-media-preview="true">
+  <img src="..." data-click-sources=".myButtonSource" alt="Media">
 </div>
 
 <button class="myButtonSource">Source 1</button>
@@ -166,30 +166,47 @@
 <button class="myButtonSource">Source 3</button>
 </pre>
 
-    <p><strong>Note:</strong> Both <code>data-click-source</code> and <code>data-click-sources</code> accept any valid CSS selector.</p>
+    <p><strong>Note:</strong> Both <code>data-click-source</code> and <code>data-click-sources</code> accept any valid
+      CSS selector.</p>
 
     <h4>Enable download button</h4>
-    <p>You can enable the download functionality for specific images or all images by using the <code>data-image-downloadable</code> attribute.</p>
+    <p>You can enable the download functionality for specific medias or all medias by using the
+      <code>data-media-downloadable</code> attribute.
+    </p>
 
-    <strong>Enable Download for Specific Images</strong>
+    <strong>Enable Download for Specific Medias</strong>
     <pre>
-<div data-image-preview="true">
+<div data-media-preview="true">
+  <img src="..." alt="Media">
+  <img src="..." alt="Media" data-media-downloadable="true">
+  <img src="..." alt="Media">
+</div>
+</pre>
+
+    <strong>Enable Download for All Medias</strong>
+    <pre>
+<div data-media-preview="true" data-media-downloadable="true">
+  <img src="..." alt="Media">
+  <img src="..." alt="Media">
+  <img src="..." alt="Media">
+</div>
+</pre>
+
+
+<h4>Enable Video Preview Support  </h4>
+<p>You can now preview **videos** by using `data-video-url` on a container element such as a <div>.
+</p>
+<pre>
+<div data-media-preview="true">
   <img src="..." alt="Image">
-  <img src="..." alt="Image" data-image-downloadable="true">
+  <div data-video-url="path/to/video.mp4" data-title="Sample Video"></div>
   <img src="..." alt="Image">
 </div>
 </pre>
 
-    <strong>Enable Download for All Images</strong>
-    <pre>
-<div data-image-preview="true" data-image-downloadable="true">
-  <img src="..." alt="Image">
-  <img src="..." alt="Image">
-  <img src="..." alt="Image">
-</div>
-</pre>
+>  The viewer automatically handles both images (`<img>`) and elements with `data-media-url` or `data-video-url`.
+ 
   </div>
-
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       document.querySelectorAll('pre').forEach(pre => {
@@ -198,7 +215,7 @@
     });
   </script>
 
-  <script src="oranbyte-image-preview.js"></script>
+  <script src="oranbyte-media-preview.js"></script>
 </body>
 
 </html>
