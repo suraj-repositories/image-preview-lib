@@ -2,8 +2,7 @@
 
 A lightweight, flexible media preview library — supports **images and videos**.  
   **Easy to use**, minimal setup, and mobile friendly.
-
----
+ 
 
 ## 🪶 Screenshots
 <div style="display: flex;flex-direction: column; gap: 10px;">
@@ -18,15 +17,12 @@ A lightweight, flexible media preview library — supports **images and videos**
     <img src="screenshots/4.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
   </div>
 </div>
-
----
+ 
 
 ## 🐊 Usage  
 
 Just include the stylesheet and script, and you’re ready to start!
-
----
-
+ 
 ###  Basic Image Preview  
 
 Add the `data-media-preview="true"` attribute to any container to enable preview support.  
@@ -38,8 +34,7 @@ Add the `data-media-preview="true"` attribute to any container to enable preview
   <img src="..." alt="Image">
 </div>
 ```
-
----
+ 
 
 ###  Video Preview Support  
 
@@ -54,8 +49,7 @@ You can now preview **videos** by using `data-video-url` on a container element 
 ```
 
 >  The viewer automatically handles both images (`<img>`) and elements with `data-media-url` or `data-video-url`.
-
----
+ 
 
 ###  With Title  
 
@@ -66,8 +60,7 @@ Add `data-title=""` to include a caption or title.
   <img src="..." data-title="My title here" alt="Image">
 </div>
 ```
-
----
+ 
 
 ###  Open Preview with External Buttons  
 
@@ -93,8 +86,7 @@ You can open previews using external buttons linked via attributes.
 <button class="myButtonSource">Source 3</button>
 ```
 Both attributes accept **any valid CSS selector**.
-
----
+ 
 
 ###  Enable Download Button  
 
@@ -115,8 +107,7 @@ You can allow downloading of specific or all images easily.
   <img src="..." alt="Image">
 </div>
 ```
-
----
+ 
 
 ### 🎹 Keyboard Controls  
 
@@ -126,8 +117,7 @@ Once a preview is open:
 - **Spacebar** → Play/Pause video (if video is active)  
 - **ESC** → Close preview  
 - Videos automatically **pause when the modal closes**
-
----
+ 
 
 ## 🪴 Upcoming Features  
 
@@ -135,8 +125,7 @@ Once a preview is open:
 -  Zoom & pinch gesture support  
 -  Lazy loading for large galleries  
 -  Dark/light theme toggle  
-
----
+ 
 
 ## Conclusion  
 
